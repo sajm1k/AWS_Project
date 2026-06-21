@@ -16,7 +16,7 @@ resource "aws_vpc_security_group_ingress_rule" "ssh" {
   to_port     = 22
   description = "Allow SSH access [!From ANYHERE!]" 
   #Only for the sake of this example, not good for production use !Should be restricted!
-  #Better to use cidr_ipv4 = "YOUR_IP/32"
+  #Better to use cidr_ipv4 = "YOUR_IP"
 }
 
 resource "aws_vpc_security_group_ingress_rule" "http"{
